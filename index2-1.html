@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/darkstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index2-1.css">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Maizi Admin</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index2.html"><span class="glyphicon glyphicon-home"></span>&nbsp;后台首页</a></li>
+                <li  class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+                <li><a href="index2-2.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
+                <li><a href="index2-3.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="admin">admin<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;个人设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--栅格系统1-->
+<div class="container" >
+    <div class="row">
+        <div class="col-md-2">
+            <!--按钮列表组&tab页切换-->
+            <div class="list-group nav nav-tabs">
+                <button type="button" class="list-group-item active" data-toggle="tab" href="#manage">用户管理</button>
+                <button type="button" class="list-group-item" data-toggle="tab" href="#search">轮播图</button>
+                <button type="button" class="list-group-item" data-toggle="tab" href="#add">雷达图</button>
+            </div>
+        </div>
+        <!--tab页1-1-->
+        <div class="col-md-10 tab-content">
+            <div class="tab-pane fade in active" id="manage">
+                <p style="border-bottom:1px solid #1C1E22;padding-bottom:10px">用户管理</p>
+                <div class="yy-lists">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#yy-y">用户列表</a></li>
+                        <li><a data-toggle="tab" href="#yy-s">用户搜索</a></li>
+                        <li><a data-toggle="tab" href="#yy-t" id="important_p">添加用户</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="yy-y">
+                            <div class="container-fluid">
+                                <div class="row" style="border-bottom:2px solid #1C1E22;padding:10px 0">
+                                    <div class="col-md-8" style="padding:0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">ID</div>
+                                            <div class="col-md-2">用户名</div>
+                                            <div class="col-md-4">邮箱</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2">操作</div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">1</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">2</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">3</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">4</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">5</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">6</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">7</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">8</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">9</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom:1px solid #1C1E22">
+                                    <div class="col-md-8" style="padding:10px 0">
+                                        <div class="container-fluid" style="padding:0">
+                                            <div class="col-md-2">10</div>
+                                            <div class="col-md-2">张三</div>
+                                            <div class="col-md-4">123456789@maiziedu.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2" style="padding:0">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:5px">
+                                                操作<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">编辑</a></li>
+                                                <li><a href="#">删除</a></li>
+                                                <li><a href="#">锁定</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--分页-->
+                            <nav aria-label="Page navigation" class="text-right">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--tab页1-2-->
+                        <div class="tab-pane" id="yy-s">
+                            <div style="border:1px solid #1C1E22">
+                                <div class="alert alert-info" role="alert" style="margin:10px">技巧提示：支持模糊搜索和匹配搜索，匹配搜索请用*代替！</div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">用户名</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">UID</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="输入用户UID">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword2">选择用户组</label>
+                                        <select class="form-control" id="exampleInputPassword2">
+                                            <option>限制会员</option>
+                                            <option>会员</option>
+                                            <option>游客</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="btn btn-default" style="margin:10px">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--tab页1-3-->
+                        <div class="tab-pane" id="yy-t">
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="btn-close">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="form" method="post" action="index.html">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail2">用户名</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="用户名" name="username">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword3">用户密码</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="请输入用户密码" name="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">确认用户密码</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="确认用户密码" name="rPassword">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword5">请输入用户邮箱</label>
+                                                    <input type="email" class="form-control" id="exampleInputPassword5" placeholder="请输入用户邮箱" name="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword6">所属用户组</label>
+                                                    <select class="form-control" id="exampleInputPassword6">
+                                                        <option>游客</option>
+                                                        <option>限制会员</option>
+                                                        <option>会员</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal" id="btn-gb">关闭</button>
+                                            <button type="button" class="btn btn-primary" id="btn-tj">提交</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--tab页2--->
+            <div class="tab-pane fade" id="search">
+                <!--轮播图-->
+                <div id="mycarousel" class="carousel slide wow lightSpeedIn" style="width:50%">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                        <li data-target="#mycarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="imgs/star1.png" alt="第一张">
+                        </div>
+                        <div class="item" style="background: #0d0d0d">
+                            <img src="imgs/star2.png" alt="第二张">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/star3.png" alt="第三张">
+                        </div>
+                        <div class="item" style="background: #0d0d0d">
+                            <img src="imgs/star4.png" alt="第四张">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/star5.png" alt="第五张">
+                        </div>
+                    </div>
+                    <a href="#mycarousel" data-slide="prev" class="carousel-control left" style="line-height:280px"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a href="#mycarousel" data-slide="next" class="carousel-control right" style="line-height:280px"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+            <!--tab页3-->
+            <div class="tab-pane fade wow flipInX" id="add">
+                <canvas id="myCanvas" width="400px" height="400px" class="img-responsive"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 text-center" style="line-height:100px">
+            Copyright&nbsp;&copy;&nbsp;2012-2015&nbsp;www.maiziedu.com&nbsp;蜀ICP备13014270号-4
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart-1.0.1-beta.4.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/index2-1.js"></script>
+</body>
+</html>

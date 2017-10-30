@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容管理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index2-2.css">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Maizi Admin</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index2.html"><span class="glyphicon glyphicon-home"></span>&nbsp;后台首页</a></li>
+                <li><a href="index2-1.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
+                <li><a href="index2-3.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;个人设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--栅格系统1-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <!--按钮列表组-->
+            <div class="list-group nav nav-tabs" id="list-group">
+                <button type="button" class="list-group-item active" data-toggle="tab" href="#a">内容管理</button>
+                <button type="button" class="list-group-item" data-toggle="tab" href="#b">添加内容</button>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <p style="border-bottom:1px solid #ddd;padding-bottom:10px;margin-bottom:20px"><b>用户管理</b></p>
+            <div>
+                <ul class="nav nav-tabs" id="nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#a">内容管理</a></li>
+                    <li><a data-toggle="tab" href="#b">添加内容</a></li>
+                </ul>
+                <div class="tab-content">
+                    <!--tab页1-->
+                    <div class="tab-pane active" id="a">
+                        <div class="container-fluid" id="container-fluid">
+                            <div class="row" style="border-bottom:1px solid #ddd;padding:10px 0">
+                                <div class="col-md-6"><b>文章标题</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4"><b>作者</b></div>
+                                        <div class="col-md-4"><b>发布时间</b></div>
+                                        <div class="col-md-4"><b>操作</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>泛Mooc职业教育，效果和就业为王</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>产品经理经常犯的7大错误，你知道吗？</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>如何正确使用Python日志系统</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>C语言const修饰符怎么使用？</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>Android开发用onCreateOptionsMenu()</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>如何才能成为优秀的IOS开发工程师</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid #ddd">
+                                <div class="col-md-6" style="padding:15px"><b>Android今年推出了哪些新技术</b></div>
+                                <div class="col-md-6" style="padding:0">
+                                    <div class="container-fluid" style="padding:0">
+                                        <div class="col-md-4" style="padding:15px">朱朝兵</div>
+                                        <div class="col-md-4" style="padding:15px">2015/08/08</div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin:10px 0">
+                                                    操作<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">编辑</a></li>
+                                                    <li><a href="#">删除</a></li>
+                                                    <li><a href="#">全局置顶</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab页2-->
+                    <div class="tab-pane" id="b">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">标题</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入文章标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">文章内容</label>
+                                <textarea id="exampleInputFile" class="form-control" rows="10" placeholder="请输入文章正文部分"></textarea>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkbox" style="margin-top:0">
+                                            <label>
+                                                <input type="checkbox">全局置顶
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <button type="button" class="btn btn-default" id="btn-publish">发布文章</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--分页-->
+                <nav aria-label="Page navigation" class="text-right">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 text-center" style="line-height:100px">
+            Copyright&nbsp;&copy;&nbsp;2012-2015&nbsp;www.maiziedu.com&nbsp;蜀ICP备13014270号-4
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index2-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.col-md-2>button>span{
+    margin-left:10px;
+}
+.col-md-12{
+    color:#3FAAE8;
+    border-bottom:1px solid #ddd;
+    margin-bottom:20px;
+}
+#row>.col-md-2>button{
+    margin-top:10px;
+}

@@ -1,0 +1,14 @@
+.list-group>button{
+    outline:none;
+}
+.form-group{
+    padding:10px;
+}
+input.error{
+    border:1px solid red
+}
+.form-group>label>span.error {
+    margin-left:50px;
+    color:red;
+}
+

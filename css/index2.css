@@ -1,0 +1,14 @@
+.navbar-default{
+    margin-bottom: 0;
+}
+.alert-danger h4{
+    margin: 0;
+    font-weight: bold;
+    line-height: 30px;
+}
+.alert-danger p{
+    line-height: 25px;
+}
+.list-group-item{
+    background:beige;
+}
